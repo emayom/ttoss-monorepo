@@ -16,7 +16,7 @@
     "packages/**/*.{js,ts,jsx,tsx}": [
       "eslint --fix"
     ],
-    "*.json": [
+    "*.json,!*.min.json": [
       "prettier --write"
     ]
   },
