@@ -6,6 +6,7 @@ module.exports = merge(common, {
   mode: "development",
   devtool: "inline-source-map",
   devServer: {
+    hot: true,
     port: 9000,
     static: {
       // 호출한 패키지 경로의 public 

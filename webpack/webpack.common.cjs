@@ -1,15 +1,13 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
   },
-  plugins: [
-    new HtmlWebpackPlugin({ template: '/public/index.html' }),
-  ],
+  plugins: [new HtmlWebpackPlugin({ template: "/public/index.html" })],
   module: {
     rules: [
       {
@@ -19,14 +17,33 @@ module.exports = {
         },
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            rootMode: 'upward',
-            presets: [
-              ['@babel/preset-env', { targets: 'defaults' }],
-            ],
+            rootMode: "upward",
+            presets: [["@babel/preset-env", { targets: "defaults" }]],
+            plugins: ['@babel/plugin-transform-react-jsx']
           },
         },
+      },
+      {
+        test: /\.css$/i,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              modules: {
+                mode: "local",
+                auto: true,
+                exportGlobals: true,
+                localIdentName: "css-[hash:base64:5]",
+                localIdentContext: path.resolve(__dirname, "src"),
+                localIdentHashSalt: "my-custom-hash",
+                exportLocalsConvention: "dashes",
+              },
+            },
+          },
+        ],
       },
       {
         test: /\.s[ac]ss$/i,

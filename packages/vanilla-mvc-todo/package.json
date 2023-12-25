@@ -2,6 +2,7 @@
   "name": "vanilla-mvc-todo",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/f-lab-edu/ttoss-mono-blog.git",
@@ -14,9 +15,17 @@
   },
   "scripts": {
     "test": "jest",
-    "dev": "parcel index.html"
+    "dev": "webpack server"
+  },
+  "dependencies": {
+    "@arrows/multimethod": "^2.1.0",
+    "html-webpack-plugin": "^5.5.3",
+    "vanilla-v-dom": "workspace:*"
   },
   "devDependencies": {
-    "parcel": "^2.10.3"
+    "@babel/preset-env": "link:./node_modules",
+    "babel-loder": "link:./node_modules",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
