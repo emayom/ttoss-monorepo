@@ -50,4 +50,20 @@ export const lineHeight = {
   l: "32px",
   xl: "34px",
   xxl: "40px",
+  // heading level
+  h1: "84px",
+  h2: "76px",
+  h3: "58px",
+  h4: "44px",
+  h5: "38px",
+  h6: "34px",
+  h7: "28px",
+};
+
+export const letterSpacing = {
+  tighter: "-3px",
+  tight: "-2px",
+  normal: "-1px",
+  wide: "-0.6",
+  wider: "-0.4",
 };
