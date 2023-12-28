@@ -2,6 +2,7 @@ import { border } from "./border";
 import { global as color } from "./colors";
 import { opacity } from "./opacity";
 import { space } from "./space";
+import { shadow } from "./shadow";
 import { font, lineHeight, letterSpacing } from "./typography";
 
 /**
@@ -12,6 +13,7 @@ export const tokens = {
   color,
   opacity,
   space,
+  shadow,
   font,
   "line-height": lineHeight,
   "letter-spacing": letterSpacing,
