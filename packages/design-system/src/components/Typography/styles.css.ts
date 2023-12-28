@@ -1,7 +1,7 @@
 import { styleVariants } from "@vanilla-extract/css";
 import { theme } from "../../styles/theme.css";
 
-type FontSizeType = keyof typeof theme.fontSizes;
+type FontSizeType = keyof typeof theme.fontSize;
 type LineHeightType = keyof typeof theme.lineHeights;
 type LetterSpacingType = keyof typeof theme.letterSpacing;
 
@@ -16,7 +16,7 @@ function fontMappingFn(
     Object.entries(keys).map(([name, [k1, k2, k3]]) => [
       name,
       {
-        fontSize: theme.fontSizes[k1],
+        fontSize: theme.fontSize[k1],
         lineHeight: theme.lineHeights[k2],
         ...(k3 && { letterSpacing: theme.letterSpacing[k3] }),
       },
