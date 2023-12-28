@@ -1,5 +1,5 @@
 import { styleVariants } from "@vanilla-extract/css";
-import { theme } from "../../../styles/theme.css";
+import { theme } from "../../styles/theme.css";
 
 type FontSizeType = keyof typeof theme.fontSizes;
 type LineHeightType = keyof typeof theme.lineHeights;
