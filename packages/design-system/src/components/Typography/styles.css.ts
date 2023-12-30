@@ -6,10 +6,12 @@ type LineHeightType = keyof typeof theme.lineHeights;
 type LetterSpacingType = keyof typeof theme.letterSpacing;
 
 function fontMappingFn(
-  keys: Record<
-    string,
-    | [FontSizeType, LineHeightType]
-    | [FontSizeType, LineHeightType, LetterSpacingType]
+  keys: Partial<
+    Record<
+      FontSizeType | "caption1" | "caption2" | "body1" | "body2",
+      | [FontSizeType, LineHeightType]
+      | [FontSizeType, LineHeightType, LetterSpacingType]
+    >
   >
 ) {
   return Object.fromEntries(
@@ -64,7 +66,11 @@ const texts = fontMappingFn({
   xxs: ["xxs", "xxs"] /** 12px */,
 });
 
-export const typography = {
+export const typography:
+  | {
+      [x in FontSizeType | "caption1" | "caption2" | "body1" | "body2"]: string;
+    }
+  | { [x: string]: string; [x: number]: string } = {
   ...styleVariants(headings, (props) => [base.heading, props]),
   ...styleVariants(bodies, (props) => [base.body, props]),
   ...styleVariants(texts, (props) => [base.body, props]),
