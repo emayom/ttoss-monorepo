@@ -1,19 +1,35 @@
 import { style } from "@vanilla-extract/css";
 import { recipe, RecipeVariants } from "@vanilla-extract/recipes";
+
 import { typography } from "../Typography/styles.css";
 import { theme } from "../../styles/theme.css";
 
-const base = style({
-  cursor: "pointer",
-  fontStyle: "normal",
-  textAlign: "center",
-  outline: "unset",
-  borderRadius: theme.borderRadius.m,
-  borderWidth: theme.borderWidth.thin,
-  borderStyle: theme.borderStyle.solid,
-  padding: `${theme.space[100]} ${theme.space[300]}`,
-  transition: "color, background 0.3s ease",
-});
+const base = style([
+  {
+    display: "flex",
+    justifyContent: "center",
+    gap: "1rem",
+    cursor: "pointer",
+    fontStyle: "normal",
+    textAlign: "center",
+    outline: "unset",
+    borderRadius: theme.borderRadius.l,
+    borderWidth: theme.borderWidth.thin,
+    borderStyle: theme.borderStyle.solid,
+    padding: `${theme.space[100]} ${theme.space[300]}`,
+    transition: "color, background 0.3s ease",
+    userSelect: "none",
+    selectors: {
+      "&:disabled": {
+        cursor: "default",
+        pointerEvents: "none",
+        color: theme.button.onDisabled,
+        background: theme.button.disabled,
+        borderColor: theme.button.disabled,
+      },
+    },
+  },
+]);
 
 const variants = {
   variant: {
@@ -45,12 +61,7 @@ const variants = {
       },
     },
   },
-  size: {
-    xs: typography.xs,
-    s: typography.s,
-    m: typography.m,
-    l: typography.l,
-  },
+  size: typography,
 };
 
 export const button = recipe({
