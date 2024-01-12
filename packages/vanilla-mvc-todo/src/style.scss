@@ -1,0 +1,224 @@
+@use 'scss-reset/reset';
+
+/**
+ * Global variables 
+*/
+$body-bg-color: #F5F5F5;
+
+$app-bg-color: #fff;
+$app-box-shadow: 0px 40px 100px 0px #00000014, 0px 10px 80px 0px #0000000F, 0px 2px 15px 0px #0000001F, 0px 2px 4px 0px #0000000F;
+
+$accent: #e6e6e6;
+$text: #35383E;
+$subtle-text: #35383E80;
+
+/**
+ * Typography
+*/
+$font-size-4xl: 2.25rem;
+$font-size-2xl: 1.5rem;
+$font-size-xl: 1.25rem;
+$font-size-lg: 1.125rem;
+$font-size-base: 1rem;
+$font-size-sm: 0.875rem;
+$font-size-xs: 0.75rem;
+
+/**
+ * mixins
+ */
+@mixin basic-button {
+    height: 35px;  
+    padding: 10px;
+    color: #35383E80;
+    border: none;
+    border-radius: 6px;
+    background-color: #efefef;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: $body-bg-color;
+    font-family: Raleway;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+
+    // Todo App 
+    #root {
+        display: flex;
+        flex-direction: column;
+        width: 410px;
+        height: max-content;
+        max-height: 80%;
+        background-color: $app-bg-color;
+        margin: auto;
+        padding: 45px;
+        border-radius: 35px;
+        gap: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: translateY(50px);
+        box-shadow: $app-box-shadow;
+
+        header {
+            #title-block {
+                width: 410px;
+                height: 47px;
+                color: $text;
+                font-size: $font-size-4xl;
+                font-weight: 800;
+                line-height: 47px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+
+            #date-value {
+                #day,
+                #fulldate {
+                    color: $subtle-text;
+                    font-size: $font-size-xl;
+                    font-weight: 700;
+                    line-height: 1.5;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+
+                #fulldate {
+                    font-size: $font-size-base;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        section {
+            display: grid;
+            grid-template-rows: 23px 23px auto;
+            gap: 20px;
+            height: 100%;
+            overflow: hidden;
+
+            #task-left {
+                color: $text;
+                font-size: $font-size-xl;
+                font-weight: 700;
+                line-height: 23px;
+                letter-spacing: 0em;
+                text-align: left;
+
+                strong {
+                    color: #9a9b9e;
+                    background: linear-gradient(to top, $accent 50%, transparent 50%);
+                }
+            }
+            // navigation 
+            #filter {
+                display: flex;
+                gap: 20px;
+
+                li {
+                    color: $subtle-text;
+
+                    a {
+                        color: inherit;
+                        font-size: $font-size-2xl;
+                        font-weight: 800;
+                        line-height: 26px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        text-decoration: none;
+
+                        &:visited {
+                            color: inherit;
+                        }
+                    }
+
+                    &[selected="true"],
+                    &:hover {
+                        color: $text;
+                    }
+                }
+            }
+
+            //
+            #todo-list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                height: inherit;
+                overflow-y: auto;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    grid-template-columns: 22px auto max-content;
+                    gap: 15px;
+                    padding: 15px;
+                    margin-right: 10px;
+                    border-radius: 10px;
+                    color: $text;
+                    background-color: #35383E0D;  
+                    
+                    input[type="checkbox"] {
+                        min-width: 1.15em;
+                        min-height: 1.15em;
+                        border: 0.15em solid currentColor;
+                        border-radius: 0.15em;
+                    }
+
+                    label {
+                        user-select: none;
+                    }
+
+                    button {
+                        display: none;
+                        color: $subtle-text;
+                        border: none;
+                        padding: 10px;
+                        border-radius: 6px;
+                        height: 35px;
+
+                        &:hover {
+                            display: block;     
+                        }
+                    }
+
+                    &[data-completed="true"]{
+                        color: #176b29;
+                        background-color: #00CD2D1A;
+
+                        input[type="checkbox"] {
+                            accent-color: #1e9437;
+                        }
+                    }
+                }
+            }
+
+            // 입력 폼 
+            #new-todo-form {
+                display: grid;
+                grid-template-columns: auto max-content;
+                gap: 10px; 
+
+                input {
+                    color: $subtle-text;
+                    font-size: $font-size-base;
+                    font-weight: 500;
+                    border: none;
+                    border-bottom: 2px solid #efefef;
+
+                    &:focus {
+                        outline: none;
+                        border-color: $text;
+                    }
+                }
+                //
+                button {
+                    @include basic-button();
+                }
+            }
+        }
+    }
+}
