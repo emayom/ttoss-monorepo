@@ -22,6 +22,8 @@ import copyFunction from './copyFunciton';
 import copyTypedArray from './copyTypedArray';
 import copyRegExp from './copyRegExp';
 
+import deepClone from './deepClone';
+
 export {
   isSet,
   isMap,
@@ -43,4 +45,5 @@ export {
   copyFunction,
   copyTypedArray,
   copyRegExp,
+  deepClone,
 };

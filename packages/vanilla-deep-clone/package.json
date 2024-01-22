@@ -1,8 +1,8 @@
 {
   "name": "vanilla-deep-clone",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
-  "main": "src/index.js",
+  "main": "./dist/bundle.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/f-lab-edu/ttoss-mono-blog.git",
@@ -18,9 +18,13 @@
   },
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "build": "rollup -c"
   },
-  "keywords": [],
+  "keywords": [
+    "modules",
+    "util"
+  ],
   "license": "ISC",
   "devDependencies": {}
 }
