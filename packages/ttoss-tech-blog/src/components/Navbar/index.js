@@ -1,7 +1,7 @@
 /** @jsx h */
 import { h } from 'vanilla-v-dom';
 import classNames from 'classnames/bind';
-import styles from './navbar.module.css';
+import * as styles from './navbar.module.css';
 import { LOGO_ARIA_LABEL, NAV_LIST } from '../constants';
 
 const cx = classNames.bind(styles);
@@ -22,7 +22,10 @@ export default function Navbar() {
         <div class={cx('navbar-content')}>
           <ul class={cx('navbar-menu')}>
             {NAV_LIST.map(({ title, href }) => (
-              <li class={cx('navbar-item', ['typography--p', 'color--grey700'])} data-resource-path={href}>
+              <li
+                class={cx('navbar-item', ['typography--p', 'color--grey700'])}
+                data-resource-path={href}
+              >
                 {title}
               </li>
             ))}

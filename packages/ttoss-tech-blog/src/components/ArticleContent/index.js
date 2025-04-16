@@ -2,14 +2,18 @@
 import { h } from 'vanilla-v-dom';
 import { fakerKO as faker } from '@faker-js/faker';
 import classNames from 'classnames/bind';
-import styles from './articleContent.module.css';
+import * as styles from './articleContent.module.css';
 import { EMOJI_PROFILE } from '../constants';
 import { formatDate } from '../../utils';
 
 const cx = classNames.bind(styles);
 
 export default function ArticleContent({
-  thumbnailConfig, editor, updatedTime, title, shortDescription,
+  thumbnailConfig,
+  editor,
+  updatedTime,
+  title,
+  shortDescription,
 }) {
   const desc = editor.shortDescription ? `ㆍ${editor.shortDescription}` : '';
 

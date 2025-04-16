@@ -21,7 +21,7 @@ module.exports = {
           options: {
             rootMode: "upward",
             presets: [["@babel/preset-env", { targets: "defaults" }]],
-            plugins: ['@babel/plugin-transform-react-jsx']
+            plugins: ["@babel/plugin-transform-react-jsx"],
           },
         },
       },
@@ -45,18 +45,18 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.s[ac]ss$/i,
-        exclude: /node_modules/,
-        use: [
-          // Creates `style` nodes from JS strings
-          "style-loader",
-          // Translates CSS into CommonJS
-          "css-loader",
-          // Compiles Sass to CSS
-          "sass-loader",
-        ],
-      },
+      // {
+      //   test: /\.s[ac]ss$/i,
+      //   exclude: /node_modules/,
+      //   use: [
+      //     // Creates `style` nodes from JS strings
+      //     "style-loader",
+      //     // Translates CSS into CommonJS
+      //     "css-loader",
+      //     // Compiles Sass to CSS
+      //     "sass-loader",
+      //   ],
+      // },
     ],
   },
 };
