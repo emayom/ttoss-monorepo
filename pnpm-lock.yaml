@@ -13,14 +13,7 @@ importers:
         version: 7.26.10
       '@babel/preset-env':
         specifier: ^7.23.3
-<<<<<<< HEAD
-        version: 7.23.3(@babel/core@7.23.3)
-      '@babel/preset-typescript':
-        specifier: ^7.23.3
-        version: 7.23.3(@babel/core@7.23.3)
-=======
         version: 7.26.9(@babel/core@7.26.10)
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
       babel-jest:
         specifier: ^29.7.0
         version: 29.7.0(@babel/core@7.26.10)
@@ -29,11 +22,7 @@ importers:
         version: 10.0.0(@babel/core@7.26.10)(webpack@5.99.5)
       css-loader:
         specifier: ^7.1.2
-<<<<<<< HEAD
-        version: 7.1.2(webpack@5.89.0)
-=======
         version: 7.1.2(webpack@5.99.5)
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
       eslint:
         specifier: ^8.48.0
         version: 8.57.1
@@ -63,19 +52,12 @@ importers:
         version: 3.5.3
       style-loader:
         specifier: ^4.0.0
-<<<<<<< HEAD
-        version: 4.0.0(webpack@5.89.0)
-=======
         version: 4.0.0(webpack@5.99.5)
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
       turbo:
         specifier: ^1.10.16
         version: 1.13.4
       webpack:
         specifier: ^5.89.0
-<<<<<<< HEAD
-        version: 5.89.0
-=======
         version: 5.99.5(webpack-cli@5.1.4)
       webpack-cli:
         specifier: ^5.1.4
@@ -83,7 +65,6 @@ importers:
       webpack-dev-server:
         specifier: ^4.15.1
         version: 4.15.2(webpack-cli@5.1.4)(webpack@5.99.5)
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
       webpack-merge:
         specifier: ^5.10.0
         version: 5.10.0
@@ -129,15 +110,6 @@ importers:
         version: link:node_modules
       undici:
         specifier: ^5.28.1
-<<<<<<< HEAD
-        version: 5.28.1
-      webpack-cli:
-        specifier: ^5.1.4
-        version: 5.1.4(webpack-dev-server@4.15.1)(webpack@5.89.0)
-      webpack-dev-server:
-        specifier: ^4.15.1
-        version: 4.15.1(webpack-cli@5.1.4)(webpack@5.89.0)
-=======
         version: 5.29.0
       webpack:
         specifier: link:./node_modules
@@ -148,7 +120,6 @@ importers:
       webpack-dev-server:
         specifier: link:./node_modules
         version: link:node_modules
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
 
   packages/vanilla-router: {}
 
@@ -1795,62 +1766,33 @@ packages:
     resolution: {integrity: sha512-imAbBGkb+ebQyxKgzv5Hu2nmROxoDOXHh80evxdoXNOrvAnVx7zimzc1Oo5h9RlfV4vPXaE2iM5pOFbvOCClWA==}
     engines: {node: '>=6.0.0'}
     dependencies:
-<<<<<<< HEAD
-      '@jridgewell/set-array': 1.1.2
-      '@jridgewell/sourcemap-codec': 1.4.15
-      '@jridgewell/trace-mapping': 0.3.20
-    dev: true
-=======
       '@jridgewell/set-array': 1.2.1
       '@jridgewell/sourcemap-codec': 1.5.0
       '@jridgewell/trace-mapping': 0.3.25
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
 
   /@jridgewell/resolve-uri@3.1.2:
     resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
     engines: {node: '>=6.0.0'}
-    dev: true
 
   /@jridgewell/set-array@1.2.1:
     resolution: {integrity: sha512-R8gLRTZeyp03ymzP/6Lil/28tGeGEzhx1q2k703KGWRAI1VdvPIXdG70VJc2pAMw3NA6JKL5hhFu1sJX0Mnn/A==}
     engines: {node: '>=6.0.0'}
-    dev: true
 
   /@jridgewell/source-map@0.3.6:
     resolution: {integrity: sha512-1ZJTZebgqllO79ue2bm3rIGud/bOe0pP5BjSRCRxxYkEZS8STV7zN84UBbiYu7jy+eCKSnVIUgoWWE/tt+shMQ==}
     dependencies:
-<<<<<<< HEAD
-      '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.20
-    dev: true
-
-  /@jridgewell/sourcemap-codec@1.4.15:
-    resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
-    dev: true
-=======
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
     dev: true
 
   /@jridgewell/sourcemap-codec@1.5.0:
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
 
   /@jridgewell/trace-mapping@0.3.25:
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
     dependencies:
-<<<<<<< HEAD
-      '@jridgewell/resolve-uri': 3.1.1
-      '@jridgewell/sourcemap-codec': 1.4.15
-    dev: true
-
-  /@leichtgewicht/ip-codec@2.0.4:
-    resolution: {integrity: sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==}
-    dev: true
-=======
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
 
   /@leichtgewicht/ip-codec@2.0.5:
     resolution: {integrity: sha512-Vo+PSpZG2/fmgmiNzYK9qWRh8h/CHrwD0mo1h1DzL4yzHNSfWYujGTYsWGreD000gcgmZ7K4Ys6Tx9TxtsKdDw==}
@@ -1962,43 +1904,26 @@ packages:
     resolution: {integrity: sha512-fB3Zu92ucau0iQ0JMCFQE7b/dv8Ot07NI3KaZIkIUNXq82k4eBAqUaneXfleGY9JWskeS9y+u0nXMyspcuQrCg==}
     dependencies:
       '@types/connect': 3.4.38
-<<<<<<< HEAD
-      '@types/node': 16.18.68
-=======
       '@types/node': 22.14.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@types/bonjour@3.5.13:
     resolution: {integrity: sha512-z9fJ5Im06zvUL548KvYNecEVlA7cVDkGUi6kZusb04mpyEFKCIZJvloCcmpmLaIahDpOQGHaHmG6imtPMmPXGQ==}
     dependencies:
-<<<<<<< HEAD
-      '@types/node': 16.18.68
-=======
       '@types/node': 22.14.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@types/connect-history-api-fallback@1.5.4:
     resolution: {integrity: sha512-n6Cr2xS1h4uAulPRdlw6Jl6s1oG8KrVilPN2yUITEs+K48EzMJJ3W1xy8K5eWuFvjp3R74AOIGSmp2UfBJ8HFw==}
     dependencies:
-<<<<<<< HEAD
-      '@types/express-serve-static-core': 4.17.41
-      '@types/node': 16.18.68
-=======
       '@types/express-serve-static-core': 5.0.6
       '@types/node': 22.14.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@types/connect@3.4.38:
     resolution: {integrity: sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug==}
     dependencies:
-<<<<<<< HEAD
-      '@types/node': 16.18.68
-=======
       '@types/node': 22.14.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@types/cookie@0.6.0:
@@ -2008,13 +1933,8 @@ packages:
   /@types/eslint-scope@3.7.7:
     resolution: {integrity: sha512-MzMFlSLBqNF2gcHWO0G1vP/YQyfvrxZ0bF+u7mzUdZ1/xK4A4sru+nraZz5i3iEIk1l1uyicaDVTB4QbbEkAYg==}
     dependencies:
-<<<<<<< HEAD
-      '@types/eslint': 8.44.7
-      '@types/estree': 1.0.5
-=======
       '@types/eslint': 9.6.1
       '@types/estree': 1.0.7
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@types/eslint@9.6.1:
@@ -2023,11 +1943,6 @@ packages:
       '@types/estree': 1.0.7
       '@types/json-schema': 7.0.15
     dev: true
-<<<<<<< HEAD
-
-  /@types/estree@1.0.5:
-    resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
-=======
 
   /@types/estree@1.0.7:
     resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
@@ -2040,7 +1955,6 @@ packages:
       '@types/qs': 6.9.18
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@types/express-serve-static-core@5.0.6:
@@ -2056,15 +1970,9 @@ packages:
     resolution: {integrity: sha512-ejlPM315qwLpaQlQDTjPdsUFSc6ZsP4AN6AlWnogPjQ7CVi7PYF3YVz+CY3jE2pwYf7E/7HlDAN0rV2GxTG0HQ==}
     dependencies:
       '@types/body-parser': 1.19.5
-<<<<<<< HEAD
-      '@types/express-serve-static-core': 4.17.41
-      '@types/qs': 6.9.10
-      '@types/serve-static': 1.15.5
-=======
       '@types/express-serve-static-core': 4.19.6
       '@types/qs': 6.9.18
       '@types/serve-static': 1.15.7
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@types/graceful-fs@4.1.9:
@@ -2084,11 +1992,7 @@ packages:
   /@types/http-proxy@1.17.16:
     resolution: {integrity: sha512-sdWoUajOB1cd0A8cRRQ1cfyWNbmFKLAqBB89Y8x5iYyG/mkJHc0YUH8pdWBy2omi9qtCpiIgGjuwO0dQST2l5w==}
     dependencies:
-<<<<<<< HEAD
-      '@types/node': 16.18.68
-=======
       '@types/node': 22.14.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@types/istanbul-lib-coverage@2.0.6:
@@ -2127,24 +2031,6 @@ packages:
     resolution: {integrity: sha512-/pyBZWSLD2n0dcHE3hq8s8ZvcETHtEuF+3E7XVt0Ig2nvsVQXdghHVcEkIWjy9A0wKfTn97a/PSDYohKIlnP/w==}
     dev: true
 
-<<<<<<< HEAD
-  /@types/mime@3.0.4:
-    resolution: {integrity: sha512-iJt33IQnVRkqeqC7PzBHPTC6fDlRNRW8vjrgqtScAhrmMwe8c4Eo7+fUGTa+XdWrpEgpyKWMYmi2dIwMAYRzPw==}
-    dev: true
-
-  /@types/node-forge@1.3.10:
-    resolution: {integrity: sha512-y6PJDYN4xYBxwd22l+OVH35N+1fCYWiuC3aiP2SlXVE6Lo7SS+rSx9r89hLxrP4pn6n1lBGhHJ12pj3F3Mpttw==}
-    dependencies:
-      '@types/node': 16.18.68
-    dev: true
-
-  /@types/node@16.18.68:
-    resolution: {integrity: sha512-sG3hPIQwJLoewrN7cr0dwEy+yF5nD4D/4FxtQpFciRD/xwUzgD+G05uxZHv5mhfXo4F9Jkp13jjn0CC2q325sg==}
-    dev: true
-
-  /@types/qs@6.9.10:
-    resolution: {integrity: sha512-3Gnx08Ns1sEoCrWssEgTSJs/rsT2vhGP+Ja9cnnk9k4ALxinORlQneLXFeFKOTJMOeZUFD1s7w+w2AphTpvzZw==}
-=======
   /@types/node-forge@1.3.11:
     resolution: {integrity: sha512-FQx220y22OKNTqaByeBGqHWYz4cl94tpcxeFdvBo3wjG6XPBuZ0BNgNZRV5J5TFmmcsJ4IzsLkmGRiQbnYsBEQ==}
     dependencies:
@@ -2159,7 +2045,6 @@ packages:
 
   /@types/qs@6.9.18:
     resolution: {integrity: sha512-kK7dgTYDyGqS+e2Q4aK9X3D7q234CIZ1Bv0q/7Z5IwRDoADNU81xXJK/YVyLbLTZCoIwUoDoffFeF+p/eIklAA==}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@types/range-parser@1.2.7:
@@ -2174,11 +2059,7 @@ packages:
     resolution: {integrity: sha512-x2EM6TJOybec7c52BX0ZspPodMsQUd5L6PRwOunVyVUhXiBSKf3AezDL8Dgvgt5o0UfKNfuA0eMLr2wLT4AiBA==}
     dependencies:
       '@types/mime': 1.3.5
-<<<<<<< HEAD
-      '@types/node': 16.18.68
-=======
       '@types/node': 22.14.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@types/serve-index@1.9.4:
@@ -2191,23 +2072,14 @@ packages:
     resolution: {integrity: sha512-W8Ym+h8nhuRwaKPaDw34QUkwsGi6Rc4yYqvKFo5rm2FUEhCFbzVWrxXUxuKK8TASjWsysJY0nsmNCGhCOIsrOw==}
     dependencies:
       '@types/http-errors': 2.0.4
-<<<<<<< HEAD
-      '@types/mime': 3.0.4
-      '@types/node': 16.18.68
-=======
       '@types/node': 22.14.1
       '@types/send': 0.17.4
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@types/sockjs@0.3.36:
     resolution: {integrity: sha512-MK9V6NzAS1+Ud7JV9lJLFqW85VbC9dq3LmwZCuBe4wBDgKC0Kj/jd8Xl+nSviU+Qc3+m7umHHyHg//2KSa0a0Q==}
     dependencies:
-<<<<<<< HEAD
-      '@types/node': 16.18.68
-=======
       '@types/node': 22.14.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@types/stack-utils@2.0.3:
@@ -2225,11 +2097,7 @@ packages:
   /@types/ws@8.18.1:
     resolution: {integrity: sha512-ThVF6DCVhA8kUGy+aazFQ4kXQ7E1Ty7A3ypFOe0IcJV8O/M511G99AW24irKrW56Wt44yG9+ij8FaqoBGkuBXg==}
     dependencies:
-<<<<<<< HEAD
-      '@types/node': 16.18.68
-=======
       '@types/node': 22.14.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@types/yargs-parser@21.0.3:
@@ -2249,22 +2117,6 @@ packages:
   /@webassemblyjs/ast@1.14.1:
     resolution: {integrity: sha512-nuBEDgQfm1ccRp/8bCQrx1frohyufl4JlbMMZ4P1wpeOfDhF6FQkxZJ1b/e+PLwr6X1Nhw6OLme5usuBWYBvuQ==}
     dependencies:
-<<<<<<< HEAD
-      '@webassemblyjs/helper-numbers': 1.11.6
-      '@webassemblyjs/helper-wasm-bytecode': 1.11.6
-    dev: true
-
-  /@webassemblyjs/floating-point-hex-parser@1.11.6:
-    resolution: {integrity: sha512-ejAj9hfRJ2XMsNHk/v6Fu2dGS+i4UaXBXGemOfQ/JfQ6mdQg/WXtwleQRLLS4OvfDhv8rYnVwH27YJLMyYsxhw==}
-    dev: true
-
-  /@webassemblyjs/helper-api-error@1.11.6:
-    resolution: {integrity: sha512-o0YkoP4pVu4rN8aTJgAyj9hC2Sv5UlkzCHhxqWj8butaLvnpdc2jOwh4ewE6CX0txSfLn/UYaV/pheS2Txg//Q==}
-    dev: true
-
-  /@webassemblyjs/helper-buffer@1.11.6:
-    resolution: {integrity: sha512-z3nFzdcp1mb8nEOFFk8DrYLpHvhKC3grJD2ardfKOzmbmJvEf/tPIqCY+sNcwZIY8ZD7IkB2l7/pqhUhqm7hLA==}
-=======
       '@webassemblyjs/helper-numbers': 1.13.2
       '@webassemblyjs/helper-wasm-bytecode': 1.13.2
     dev: true
@@ -2279,7 +2131,6 @@ packages:
 
   /@webassemblyjs/helper-buffer@1.14.1:
     resolution: {integrity: sha512-jyH7wtcHiKssDtFPRB+iQdxlDf96m0E39yb0k5uJVhFGleZFoNw1c4aeIcVUPPbXUVJ94wwnMOAqUHyzoEPVMA==}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@webassemblyjs/helper-numbers@1.13.2:
@@ -2290,29 +2141,17 @@ packages:
       '@xtuc/long': 4.2.2
     dev: true
 
-<<<<<<< HEAD
-  /@webassemblyjs/helper-wasm-bytecode@1.11.6:
-    resolution: {integrity: sha512-sFFHKwcmBprO9e7Icf0+gddyWYDViL8bpPjJJl0WHxCdETktXdmtWLGVzoHbqUcY4Be1LkNfwTmXOJUFZYSJdA==}
-=======
   /@webassemblyjs/helper-wasm-bytecode@1.13.2:
     resolution: {integrity: sha512-3QbLKy93F0EAIXLh0ogEVR6rOubA9AoZ+WRYhNbFyuB70j3dRdwH9g+qXhLAO0kiYGlg3TxDV+I4rQTr/YNXkA==}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@webassemblyjs/helper-wasm-section@1.14.1:
     resolution: {integrity: sha512-ds5mXEqTJ6oxRoqjhWDU83OgzAYjwsCV8Lo/N+oRsNDmx/ZDpqalmrtgOMkHwxsG0iI//3BwWAErYRHtgn0dZw==}
     dependencies:
-<<<<<<< HEAD
-      '@webassemblyjs/ast': 1.11.6
-      '@webassemblyjs/helper-buffer': 1.11.6
-      '@webassemblyjs/helper-wasm-bytecode': 1.11.6
-      '@webassemblyjs/wasm-gen': 1.11.6
-=======
       '@webassemblyjs/ast': 1.14.1
       '@webassemblyjs/helper-buffer': 1.14.1
       '@webassemblyjs/helper-wasm-bytecode': 1.13.2
       '@webassemblyjs/wasm-gen': 1.14.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@webassemblyjs/ieee754@1.13.2:
@@ -2327,28 +2166,13 @@ packages:
       '@xtuc/long': 4.2.2
     dev: true
 
-<<<<<<< HEAD
-  /@webassemblyjs/utf8@1.11.6:
-    resolution: {integrity: sha512-vtXf2wTQ3+up9Zsg8sa2yWiQpzSsMyXj0qViVP6xKGCUT8p8YJ6HqI7l5eCnWx1T/FYdsv07HQs2wTFbbof/RA==}
-=======
   /@webassemblyjs/utf8@1.13.2:
     resolution: {integrity: sha512-3NQWGjKTASY1xV5m7Hr0iPeXD9+RDobLll3T9d2AO+g3my8xy5peVyjSag4I50mR1bBSN/Ct12lo+R9tJk0NZQ==}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@webassemblyjs/wasm-edit@1.14.1:
     resolution: {integrity: sha512-RNJUIQH/J8iA/1NzlE4N7KtyZNHi3w7at7hDjvRNm5rcUXa00z1vRz3glZoULfJ5mpvYhLybmVcwcjGrC1pRrQ==}
     dependencies:
-<<<<<<< HEAD
-      '@webassemblyjs/ast': 1.11.6
-      '@webassemblyjs/helper-buffer': 1.11.6
-      '@webassemblyjs/helper-wasm-bytecode': 1.11.6
-      '@webassemblyjs/helper-wasm-section': 1.11.6
-      '@webassemblyjs/wasm-gen': 1.11.6
-      '@webassemblyjs/wasm-opt': 1.11.6
-      '@webassemblyjs/wasm-parser': 1.11.6
-      '@webassemblyjs/wast-printer': 1.11.6
-=======
       '@webassemblyjs/ast': 1.14.1
       '@webassemblyjs/helper-buffer': 1.14.1
       '@webassemblyjs/helper-wasm-bytecode': 1.13.2
@@ -2357,61 +2181,36 @@ packages:
       '@webassemblyjs/wasm-opt': 1.14.1
       '@webassemblyjs/wasm-parser': 1.14.1
       '@webassemblyjs/wast-printer': 1.14.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@webassemblyjs/wasm-gen@1.14.1:
     resolution: {integrity: sha512-AmomSIjP8ZbfGQhumkNvgC33AY7qtMCXnN6bL2u2Js4gVCg8fp735aEiMSBbDR7UQIj90n4wKAFUSEd0QN2Ukg==}
     dependencies:
-<<<<<<< HEAD
-      '@webassemblyjs/ast': 1.11.6
-      '@webassemblyjs/helper-wasm-bytecode': 1.11.6
-      '@webassemblyjs/ieee754': 1.11.6
-      '@webassemblyjs/leb128': 1.11.6
-      '@webassemblyjs/utf8': 1.11.6
-=======
       '@webassemblyjs/ast': 1.14.1
       '@webassemblyjs/helper-wasm-bytecode': 1.13.2
       '@webassemblyjs/ieee754': 1.13.2
       '@webassemblyjs/leb128': 1.13.2
       '@webassemblyjs/utf8': 1.13.2
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@webassemblyjs/wasm-opt@1.14.1:
     resolution: {integrity: sha512-PTcKLUNvBqnY2U6E5bdOQcSM+oVP/PmrDY9NzowJjislEjwP/C4an2303MCVS2Mg9d3AJpIGdUFIQQWbPds0Sw==}
     dependencies:
-<<<<<<< HEAD
-      '@webassemblyjs/ast': 1.11.6
-      '@webassemblyjs/helper-buffer': 1.11.6
-      '@webassemblyjs/wasm-gen': 1.11.6
-      '@webassemblyjs/wasm-parser': 1.11.6
-=======
       '@webassemblyjs/ast': 1.14.1
       '@webassemblyjs/helper-buffer': 1.14.1
       '@webassemblyjs/wasm-gen': 1.14.1
       '@webassemblyjs/wasm-parser': 1.14.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@webassemblyjs/wasm-parser@1.14.1:
     resolution: {integrity: sha512-JLBl+KZ0R5qB7mCnud/yyX08jWFw5MsoalJ1pQ4EdFlgj9VdXKGuENGsiCIjegI1W7p91rUlcB/LB5yRJKNTcQ==}
     dependencies:
-<<<<<<< HEAD
-      '@webassemblyjs/ast': 1.11.6
-      '@webassemblyjs/helper-api-error': 1.11.6
-      '@webassemblyjs/helper-wasm-bytecode': 1.11.6
-      '@webassemblyjs/ieee754': 1.11.6
-      '@webassemblyjs/leb128': 1.11.6
-      '@webassemblyjs/utf8': 1.11.6
-=======
       '@webassemblyjs/ast': 1.14.1
       '@webassemblyjs/helper-api-error': 1.13.2
       '@webassemblyjs/helper-wasm-bytecode': 1.13.2
       '@webassemblyjs/ieee754': 1.13.2
       '@webassemblyjs/leb128': 1.13.2
       '@webassemblyjs/utf8': 1.13.2
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@webassemblyjs/wast-printer@1.14.1:
@@ -2428,13 +2227,8 @@ packages:
       webpack: 5.x.x
       webpack-cli: 5.x.x
     dependencies:
-<<<<<<< HEAD
-      webpack: 5.89.0(webpack-cli@5.1.4)
-      webpack-cli: 5.1.4(webpack-dev-server@4.15.1)(webpack@5.89.0)
-=======
       webpack: 5.99.5(webpack-cli@5.1.4)
       webpack-cli: 5.1.4(webpack-dev-server@4.15.2)(webpack@5.99.5)
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@webpack-cli/info@2.0.2(webpack-cli@5.1.4)(webpack@5.99.5):
@@ -2444,13 +2238,8 @@ packages:
       webpack: 5.x.x
       webpack-cli: 5.x.x
     dependencies:
-<<<<<<< HEAD
-      webpack: 5.89.0(webpack-cli@5.1.4)
-      webpack-cli: 5.1.4(webpack-dev-server@4.15.1)(webpack@5.89.0)
-=======
       webpack: 5.99.5(webpack-cli@5.1.4)
       webpack-cli: 5.1.4(webpack-dev-server@4.15.2)(webpack@5.99.5)
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@webpack-cli/serve@2.0.5(webpack-cli@5.1.4)(webpack-dev-server@4.15.2)(webpack@5.99.5):
@@ -2464,15 +2253,9 @@ packages:
       webpack-dev-server:
         optional: true
     dependencies:
-<<<<<<< HEAD
-      webpack: 5.89.0(webpack-cli@5.1.4)
-      webpack-cli: 5.1.4(webpack-dev-server@4.15.1)(webpack@5.89.0)
-      webpack-dev-server: 4.15.1(webpack-cli@5.1.4)(webpack@5.89.0)
-=======
       webpack: 5.99.5(webpack-cli@5.1.4)
       webpack-cli: 5.1.4(webpack-dev-server@4.15.2)(webpack@5.99.5)
       webpack-dev-server: 4.15.2(webpack-cli@5.1.4)(webpack@5.99.5)
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /@xtuc/ieee754@1.2.0:
@@ -2503,19 +2286,7 @@ packages:
       acorn-walk: 8.3.4
     dev: true
 
-<<<<<<< HEAD
-  /acorn-import-assertions@1.9.0(acorn@8.10.0):
-    resolution: {integrity: sha512-cmMwop9x+8KFhxvKrKfPYmN6/pKTYYHBqLa0DfvVZcKMJWNyWLnaqND7dx/qn66R7ewM1UX5XMaDVP5wlVTaVA==}
-    peerDependencies:
-      acorn: ^8
-    dependencies:
-      acorn: 8.10.0
-    dev: true
-
-  /acorn-jsx@5.3.2(acorn@8.10.0):
-=======
   /acorn-jsx@5.3.2(acorn@8.14.1):
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
@@ -2553,19 +2324,7 @@ packages:
       ajv:
         optional: true
     dependencies:
-<<<<<<< HEAD
-      ajv: 8.12.0
-    dev: true
-
-  /ajv-keywords@3.5.2(ajv@6.12.6):
-    resolution: {integrity: sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==}
-    peerDependencies:
-      ajv: ^6.9.1
-    dependencies:
-      ajv: 6.12.6
-=======
       ajv: 8.17.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /ajv-keywords@5.1.0(ajv@8.17.1):
@@ -2593,10 +2352,6 @@ packages:
       fast-uri: 3.0.6
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
-<<<<<<< HEAD
-      uri-js: 4.4.1
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /ansi-escapes@4.3.2:
@@ -2622,14 +2377,6 @@ packages:
   /ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
-<<<<<<< HEAD
-    dev: true
-
-  /ansi-regex@6.0.1:
-    resolution: {integrity: sha512-n5M855fKb2SsfMIiFFoVrABHJC8QtHwVx+mHWP3QcEqBHYienj5dHSgjbxtC0WEZXYt4wcD6zrQElDPhFuZgfA==}
-    engines: {node: '>=12'}
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /ansi-regex@6.1.0:
@@ -2689,10 +2436,6 @@ packages:
     resolution: {integrity: sha512-PCVAQswWemu6UdxsDFFX/+gVeYqKAod3D3UVm91jHwynguOwAvYPhx8nNlM++NqRcK6CxxpUafjmhIdKiHibqg==}
     dev: true
 
-<<<<<<< HEAD
-  /array-flatten@2.1.2:
-    resolution: {integrity: sha512-hNfzcOV8W4NdualtqBFPyVO+54DSJuZGY9qT4pRroB6S9e3iiido2ISIC5h9R2sPJ8H3FHCIiEnsv1lPXO3KtQ==}
-=======
   /array-includes@3.1.8:
     resolution: {integrity: sha512-itaWrbYbqpGXkGhZPGUulwnhVf5Hpy1xiCFsGqyIGglbBxmG5vSjxQen3/WGOjPpNEv1RtBLKxbmVXm8HpJStQ==}
     engines: {node: '>= 0.4'}
@@ -2703,7 +2446,6 @@ packages:
       es-object-atoms: 1.1.1
       get-intrinsic: 1.3.0
       is-string: 1.1.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /array.prototype.findlast@1.2.5:
@@ -2832,11 +2574,7 @@ packages:
     dependencies:
       '@babel/core': 7.26.10
       find-up: 5.0.0
-<<<<<<< HEAD
-      webpack: 5.89.0
-=======
       webpack: 5.99.5(webpack-cli@5.1.4)
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /babel-plugin-istanbul@6.1.1:
@@ -2934,13 +2672,6 @@ packages:
 
   /balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
-<<<<<<< HEAD
-    dev: true
-
-  /base64-js@1.5.1:
-    resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /batch@0.6.1:
@@ -2950,17 +2681,6 @@ packages:
   /binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
-<<<<<<< HEAD
-    dev: true
-
-  /bl@4.1.0:
-    resolution: {integrity: sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w==}
-    dependencies:
-      buffer: 5.7.1
-      inherits: 2.0.4
-      readable-stream: 3.6.2
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /body-parser@1.20.3:
@@ -3005,22 +2725,7 @@ packages:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
     engines: {node: '>=8'}
     dependencies:
-<<<<<<< HEAD
-      fill-range: 7.0.1
-    dev: true
-
-  /browserslist@4.22.1:
-    resolution: {integrity: sha512-FEVc202+2iuClEhZhrWy6ZiAcRLvNMyYcxZ8raemul1DYVOVdFsbqckWLdsixQZCpJlwe77Z3UTalE7jsjnKfQ==}
-    engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
-    hasBin: true
-    dependencies:
-      caniuse-lite: 1.0.30001562
-      electron-to-chromium: 1.4.583
-      node-releases: 2.0.13
-      update-browserslist-db: 1.0.13(browserslist@4.22.1)
-=======
       fill-range: 7.1.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /browserslist@4.24.4:
@@ -3041,25 +2746,8 @@ packages:
 
   /buffer-from@1.1.2:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
-<<<<<<< HEAD
     dev: true
 
-  /buffer@5.7.1:
-    resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
-    dependencies:
-      base64-js: 1.5.1
-      ieee754: 1.2.1
-    dev: true
-
-  /bytes@3.0.0:
-    resolution: {integrity: sha512-pMhOfFDPiv9t5jjIXkHosWmkSyQbvsgEVNkz0ERHbuLh2T/7j4Mqqpz523Fe8MVY89KC6Sh/QfS2sM+SjgFDcw==}
-    engines: {node: '>= 0.8'}
-    dev: true
-
-=======
-    dev: true
-
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
   /bytes@3.1.2:
     resolution: {integrity: sha512-/Nf7TyzTx6S3yRJObOAV7956r8cr2+Oj8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTSi6fzO6F0pBdcYbEg==}
     engines: {node: '>= 0.8'}
@@ -3071,10 +2759,6 @@ packages:
     dependencies:
       es-errors: 1.3.0
       function-bind: 1.1.2
-<<<<<<< HEAD
-      get-intrinsic: 1.2.2
-      set-function-length: 1.1.1
-=======
     dev: true
 
   /call-bind@1.0.8:
@@ -3093,7 +2777,6 @@ packages:
     dependencies:
       call-bind-apply-helpers: 1.0.2
       get-intrinsic: 1.3.0
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /callsites@3.1.0:
@@ -3105,11 +2788,7 @@ packages:
     resolution: {integrity: sha512-gxGWBrTT1JuMx6R+o5PTXMmUnhnVzLQ9SNutD4YqKtI6ap897t3tKECYla6gCWEkplXnlNybEkZg9GEGxKFCgw==}
     dependencies:
       pascal-case: 3.1.2
-<<<<<<< HEAD
-      tslib: 2.6.2
-=======
       tslib: 2.8.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /camelcase@5.3.1:
@@ -3122,27 +2801,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-<<<<<<< HEAD
-  /caniuse-lite@1.0.30001562:
-    resolution: {integrity: sha512-kfte3Hym//51EdX4239i+Rmp20EsLIYGdPkERegTgU19hQWCRhsRFGKHTliUlsry53tv17K7n077Kqa0WJU4ng==}
-    dev: true
-
-  /caniuse-lite@1.0.30001570:
-    resolution: {integrity: sha512-+3e0ASu4sw1SWaoCtvPeyXp+5PsjigkSt8OXZbF9StH5pQWbxEjLAZE3n8Aup5udop1uRiKA7a4utUk/uoSpUw==}
-    dev: true
-
-  /chalk@2.4.2:
-    resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
-    engines: {node: '>=4'}
-    dependencies:
-      ansi-styles: 3.2.1
-      escape-string-regexp: 1.0.5
-      supports-color: 5.5.0
-    dev: true
-=======
   /caniuse-lite@1.0.30001714:
     resolution: {integrity: sha512-mtgapdwDLSSBnCI3JokHM7oEQBLxiJKVRtg10AxM1AyeiKcM96f0Mkbqeq+1AbiCtvMcHRulAAEMu693JrSWqg==}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
 
   /chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -3200,16 +2860,6 @@ packages:
     engines: {node: '>= 10.0'}
     dependencies:
       source-map: 0.6.1
-<<<<<<< HEAD
-    dev: true
-
-  /cli-cursor@3.1.0:
-    resolution: {integrity: sha512-I/zHAwsKf9FqGoXM4WWRACob9+SNukZTd94DWF57E4toouRulbCxcUh6RKUEOQlYTHJnzkPMySvPNaaSLNfLZw==}
-    engines: {node: '>=8'}
-    dependencies:
-      restore-cursor: 3.1.0
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /cli-cursor@5.0.0:
@@ -3248,14 +2898,6 @@ packages:
       is-plain-object: 2.0.4
       kind-of: 6.0.3
       shallow-clone: 3.0.1
-<<<<<<< HEAD
-    dev: true
-
-  /clone@1.0.4:
-    resolution: {integrity: sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==}
-    engines: {node: '>=0.8'}
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /co@4.6.0:
@@ -3312,11 +2954,7 @@ packages:
     resolution: {integrity: sha512-AF3r7P5dWxL8MxyITRMlORQNaOA2IkAFaTr4k7BUumjPtRpGDTZpl0Pb1XCO6JeDCBdp126Cgs9sMxqSjgYyRg==}
     engines: {node: '>= 0.6'}
     dependencies:
-<<<<<<< HEAD
-      mime-db: 1.52.0
-=======
       mime-db: 1.54.0
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /compression@1.8.0:
@@ -3365,14 +3003,11 @@ packages:
   /cookie-signature@1.0.6:
     resolution: {integrity: sha512-QADzlaHc8icV8I7vbaJXJwod9HWYp8uCqf1xa4OfNu1T7JVxQIrUgOWtHdNDtPiywmFbiS12VjotIXLrKM3orQ==}
     dev: true
-<<<<<<< HEAD
-=======
 
   /cookie@0.7.1:
     resolution: {integrity: sha512-6DnInpx7SJ2AK3+CTUE/ZM0vWTUboZCegxhC2xiIydHR9jNuTAASBrfEpHhiGOZw/nX51bHt6YQl8jsGo4y/0w==}
     engines: {node: '>= 0.6'}
     dev: true
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
 
   /cookie@0.7.2:
     resolution: {integrity: sha512-yki5XnKuf750l50uGTllt6kKILY4nQ1eNIQatoXEByZ5dWgnKqbnqmTrBE5B4N7lrMJKQ2ytWMiTO2o0v6Ew/w==}
@@ -3436,13 +3071,8 @@ packages:
       postcss-modules-scope: 3.2.1(postcss@8.5.3)
       postcss-modules-values: 4.0.0(postcss@8.5.3)
       postcss-value-parser: 4.2.0
-<<<<<<< HEAD
-      semver: 7.5.4
-      webpack: 5.89.0
-=======
       semver: 7.7.1
       webpack: 5.99.5(webpack-cli@5.1.4)
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /css-select@4.3.0:
@@ -3552,12 +3182,7 @@ packages:
       supports-color:
         optional: true
     dependencies:
-<<<<<<< HEAD
-      ms: 2.1.2
-    dev: true
-=======
       ms: 2.1.3
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
 
   /decimal.js@10.5.0:
     resolution: {integrity: sha512-8vDa8Qxvr/+d94hSh5P3IJwI5t8/c0KsMp+g8bNw9cY2icONa5aPfvKeieW1WlG0WQYwwhJ7mjui2xtiePQSXw==}
@@ -3586,30 +3211,15 @@ packages:
     engines: {node: '>= 10'}
     dependencies:
       execa: 5.1.1
-<<<<<<< HEAD
-    dev: true
-
-  /defaults@1.0.4:
-    resolution: {integrity: sha512-eFuaLoy/Rxalv2kr+lqMlUnrDWV+3j4pljOIJgLIhI058IQfWJ7vXhyEIHu+HtC738klGALYxOKDO0bQP3tg8A==}
-    dependencies:
-      clone: 1.0.4
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /define-data-property@1.1.4:
     resolution: {integrity: sha512-rBMvIzlpA8v6E+SJZoo++HAYqsLrkg7MSfIinMPFhmkorw7X+dOXVJQs+QT69zGkzMyfDnIMN2Wid1+NbL3T+A==}
     engines: {node: '>= 0.4'}
     dependencies:
-<<<<<<< HEAD
-      get-intrinsic: 1.2.2
-      gopd: 1.0.1
-      has-property-descriptors: 1.0.1
-=======
       es-define-property: 1.0.1
       es-errors: 1.3.0
       gopd: 1.2.0
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /define-lazy-prop@2.0.0:
@@ -3639,14 +3249,6 @@ packages:
   /depd@2.0.0:
     resolution: {integrity: sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==}
     engines: {node: '>= 0.8'}
-<<<<<<< HEAD
-    dev: true
-
-  /dequal@2.0.3:
-    resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
-    engines: {node: '>=6'}
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /destroy@1.2.0:
@@ -3668,22 +3270,11 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dev: true
 
-<<<<<<< HEAD
-  /dns-equal@1.0.0:
-    resolution: {integrity: sha512-z+paD6YUQsk+AbGCEM4PrOXSss5gd66QfcVBFTKR/HpFL9jCqikS94HYwKww6fQyO7IxrIIyUu+g0Ka9tUS2Cg==}
-    dev: true
-
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
   /dns-packet@5.6.1:
     resolution: {integrity: sha512-l4gcSouhcgIKRvyy99RNVOgxXiicE+2jZoNmaNmZ6JXiGajBOJAesk1OBlJuM5k2c+eudGdLxDqXuPCKIj6kpw==}
     engines: {node: '>=6'}
     dependencies:
-<<<<<<< HEAD
-      '@leichtgewicht/ip-codec': 2.0.4
-=======
       '@leichtgewicht/ip-codec': 2.0.5
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /doctrine@2.1.0:
@@ -3745,11 +3336,7 @@ packages:
     resolution: {integrity: sha512-Kv5nKlh6yRrdrGvxeJ2e5y2eRUpkUosIW4A2AS38zwSz27zu7ufDwQPi5Jhs3XAlGNetl3bmnGhQsMtkKJnj3w==}
     dependencies:
       no-case: 3.0.4
-<<<<<<< HEAD
-      tslib: 2.6.2
-=======
       tslib: 2.8.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /dunder-proto@1.0.1:
@@ -3763,17 +3350,6 @@ packages:
 
   /ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
-<<<<<<< HEAD
-    dev: true
-
-  /electron-to-chromium@1.4.583:
-    resolution: {integrity: sha512-93y1gcONABZ7uqYe/JWDVQP/Pj/sQSunF0HVAPdlg/pfBnOyBMLlQUxWvkqcljJg1+W6cjvPuYD+r1Th9Tn8mA==}
-    dev: true
-
-  /electron-to-chromium@1.4.614:
-    resolution: {integrity: sha512-X4ze/9Sc3QWs6h92yerwqv7aB/uU8vCjZcrMjA8N9R1pjMFRe44dLsck5FzLilOYvcXuDn93B+bpGYyufc70gQ==}
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /electron-to-chromium@1.5.137:
@@ -3800,14 +3376,11 @@ packages:
     resolution: {integrity: sha512-TPJXq8JqFaVYm2CWmPvnP2Iyo4ZSM7/QKcSmuMLDObfpH5fi7RUGmd/rTDf+rut/saiDiQEeVTNgAmJEdAOx0w==}
     engines: {node: '>= 0.8'}
     dev: true
-<<<<<<< HEAD
-=======
 
   /encodeurl@2.0.0:
     resolution: {integrity: sha512-Q0n9HRi4m6JuGIV1eFlmvJB7ZEVxu93IrMyiMsGC0lrMJMWzRgx6WGquyfQgZVb31vhGgXnfmPNNXmxnOkRBrg==}
     engines: {node: '>= 0.8'}
     dev: true
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
 
   /enhanced-resolve@5.18.1:
     resolution: {integrity: sha512-ZSW3ma5GkcQBIpwZTSRAI8N71Uuwgs93IezB7mf7R60tC8ZbJideoDNKjHn2O9KIlx6rkGTTEk1xUCK2E1Y2Yg==}
@@ -3831,14 +3404,11 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
     dev: true
-<<<<<<< HEAD
-=======
 
   /environment@1.1.0:
     resolution: {integrity: sha512-xUtoPkMggbz0MPyPiIWr1Kp4aeWJjDZ6SMvURhimjdZgsRuDplF5/s9hcgGhyXMhs+6vpnuoiZ2kFiu3FMnS8Q==}
     engines: {node: '>=18'}
     dev: true
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
 
   /error-ex@1.3.2:
     resolution: {integrity: sha512-7dFHNmqeFSEt2ZBsCriorKnn3Z2pj+fd9kmI6QoWw4//DL+icEBfc0U7qJCisqrTsKTjw4fNFy2pW9OqStD84g==}
@@ -3939,16 +3509,11 @@ packages:
     resolution: {integrity: sha512-qqnD1yMU6tk/jnaMosogGySTZP8YtUgAffA9nMN+E/rjxcfRQ6IEk7IiozUjgxKoFHBGjTLnrHB/YC45r/59EQ==}
     dev: true
 
-<<<<<<< HEAD
-  /es-module-lexer@1.4.1:
-    resolution: {integrity: sha512-cXLGjP0c4T3flZJKQSuziYoq7MlT+rnvfZjfp7h+I7K9BNX54kP9nyWvdbwjQ4u1iWbOL4u96fgeZLToQlZC7w==}
-=======
   /es-object-atoms@1.1.1:
     resolution: {integrity: sha512-FGgH2h8zKNim9ljj7dankFPcICIK9Cp5bm+c2gQSYePhpaG5+esrLODihIorn+Pe6FGJzWhXQotPv73jTaldXA==}
     engines: {node: '>= 0.4'}
     dependencies:
       es-errors: 1.3.0
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /es-set-tostringtag@2.1.0:
@@ -3980,18 +3545,9 @@ packages:
   /escalade@3.2.0:
     resolution: {integrity: sha512-WUj2qlxaQtO4g6Pq5c29GTcWGDyd8itL8zTlipgECz3JesAiiOKotd8JU6otB3PACgG6xkJUyVhboMS+bje/jA==}
     engines: {node: '>=6'}
-    dev: true
 
   /escape-html@1.0.3:
     resolution: {integrity: sha512-NiSupZ4OeuGwr68lGIeym/ksIZMJodUGOSCZ/FSnTxcrekbvqrgdUxlJOMpijaKZVjAJrWrGs/6Jy8OMuyj9ow==}
-<<<<<<< HEAD
-    dev: true
-
-  /escape-string-regexp@1.0.5:
-    resolution: {integrity: sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==}
-    engines: {node: '>=0.8.0'}
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /escape-string-regexp@2.0.0:
@@ -4399,18 +3955,6 @@ packages:
       vary: 1.1.2
     transitivePeerDependencies:
       - supports-color
-<<<<<<< HEAD
-    dev: true
-
-  /external-editor@3.1.0:
-    resolution: {integrity: sha512-hMQ4CX1p1izmuLYyZqLMO/qGNw10wSv9QDCPfzXfyFrOaCSSoRfqE1Kf1s5an66J5JZC62NewG+mK49jOCtQew==}
-    engines: {node: '>=4'}
-    dependencies:
-      chardet: 0.7.0
-      iconv-lite: 0.4.24
-      tmp: 0.0.33
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /fast-deep-equal@3.1.3:
@@ -4552,13 +4096,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-<<<<<<< HEAD
-  /fs-monkey@1.0.5:
-    resolution: {integrity: sha512-8uMbBjrhzW76TYgEV27Y5E//W2f/lTFmx78P2w19FZSxarhI/798APGQyuGCwmkNxgwGRhrLfvWyLBvNtuOmew==}
-=======
   /fs-monkey@1.0.6:
     resolution: {integrity: sha512-b1FMfwetIKymC0eioW7mTywihSQE4oLzQn1dB6rZB5fx/3NpNEdAWeCSMB+60/AeT0TCXsxzAlcYVEFCTAksWg==}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /fs.realpath@1.0.0:
@@ -4616,17 +4155,11 @@ packages:
       es-errors: 1.3.0
       es-object-atoms: 1.1.1
       function-bind: 1.1.2
-<<<<<<< HEAD
-      has-proto: 1.0.1
-      has-symbols: 1.0.3
-      hasown: 2.0.0
-=======
       get-proto: 1.0.1
       gopd: 1.2.0
       has-symbols: 1.1.0
       hasown: 2.0.2
       math-intrinsics: 1.1.0
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /get-package-type@0.1.0:
@@ -4710,16 +4243,9 @@ packages:
       gopd: 1.2.0
     dev: true
 
-<<<<<<< HEAD
-  /gopd@1.0.1:
-    resolution: {integrity: sha512-d65bNlIadxvpb/A2abVdlqKqV563juRnZ1Wtk6s1sIR8uNsXR70xqIzVqxVf1eTqDunwT2MkczEeaezCKTZhwA==}
-    dependencies:
-      get-intrinsic: 1.2.2
-=======
   /gopd@1.2.0:
     resolution: {integrity: sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==}
     engines: {node: '>= 0.4'}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /graceful-fs@4.2.11:
@@ -4737,13 +4263,6 @@ packages:
 
   /handle-thing@2.0.1:
     resolution: {integrity: sha512-9Qn4yBxelxoh2Ow62nP+Ka/kMnOXRi8BXnRaUwezLNhqelnN49xKz4F/dPP8OYLxLxq6JDtZb2i9XznUQbNPTg==}
-<<<<<<< HEAD
-    dev: true
-
-  /has-bigints@1.0.2:
-    resolution: {integrity: sha512-tSvCKtBr9lkF0Ex0aQiP9N+OpV4zi2r/Nee5VkRDbaqv35RLYMzbwQfFSZZH0kR+Rd6302UJZ2p/bJCEoR3VoQ==}
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /has-bigints@1.1.0:
@@ -4759,21 +4278,14 @@ packages:
   /has-property-descriptors@1.0.2:
     resolution: {integrity: sha512-55JNKuIW+vq4Ke1BjOTjM2YctQIvCT7GFzHwmfZPGo5wnrgkid0YQtnAleFSqumZm4az3n2BS+erby5ipJdgrg==}
     dependencies:
-<<<<<<< HEAD
-      get-intrinsic: 1.2.2
-=======
       es-define-property: 1.0.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /has-proto@1.2.0:
     resolution: {integrity: sha512-KIL7eQPfHQRC8+XluaIw7BHUwwqL19bQn4hzNgdr+1wXoU0KKj6rufu47lhY7KbJR2C6T6+PfyN0Ea7wkSS+qQ==}
     engines: {node: '>= 0.4'}
-<<<<<<< HEAD
-=======
     dependencies:
       dunder-proto: 1.0.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /has-symbols@1.1.0:
@@ -4820,13 +4332,8 @@ packages:
       whatwg-encoding: 2.0.0
     dev: true
 
-<<<<<<< HEAD
-  /html-entities@2.4.0:
-    resolution: {integrity: sha512-igBTJcNNNhvZFRtm8uA6xMY6xYleeDwn3PeBCkDz7tHttv4F2hsDI2aPgNERWzvRcNYHNT3ymRaQzllmXj4YsQ==}
-=======
   /html-entities@2.6.0:
     resolution: {integrity: sha512-kig+rMn/QOVRvr7c86gQ8lWXq+Hkv6CbAH1hLu+RG338StTpE8Z0b44SDVaqVu7HGKf27frdmUYEs9hTUX/cLQ==}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /html-escaper@2.0.2:
@@ -4844,11 +4351,7 @@ packages:
       he: 1.2.0
       param-case: 3.0.4
       relateurl: 0.2.7
-<<<<<<< HEAD
-      terser: 5.24.0
-=======
       terser: 5.39.0
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /html-webpack-plugin@5.6.3(webpack@5.99.5):
@@ -4868,11 +4371,7 @@ packages:
       lodash: 4.17.21
       pretty-error: 4.0.0
       tapable: 2.2.1
-<<<<<<< HEAD
-      webpack: 5.89.0(webpack-cli@5.1.4)
-=======
       webpack: 5.99.5(webpack-cli@5.1.4)
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /htmlparser2@6.1.0:
@@ -4909,13 +4408,8 @@ packages:
       toidentifier: 1.0.1
     dev: true
 
-<<<<<<< HEAD
-  /http-parser-js@0.5.8:
-    resolution: {integrity: sha512-SGeBX54F94Wgu5RH3X5jsDtf4eHyRogWX1XGT3b4HuW3tQPM4AaBzoUji/4AAJNXCEOWZ5O0DgZmJw1947gD5Q==}
-=======
   /http-parser-js@0.5.10:
     resolution: {integrity: sha512-Pysuw9XpUq5dVc/2SMHpuTY01RFl8fttgcyunjL7eEMhGM3cI4eOmiCycJDVCo/7O7ClfQD3SaI6ftDzqOXYMA==}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /http-proxy-agent@5.0.0:
@@ -5049,30 +4543,6 @@ packages:
 
   /inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
-<<<<<<< HEAD
-    dev: true
-
-  /inquirer@8.2.6:
-    resolution: {integrity: sha512-M1WuAmb7pn9zdFRtQYk26ZBoY043Sse0wVDdk4Bppr+JOXyQYybdtvK+l9wUibhtjdjvtoiNy8tk+EgsYIUqKg==}
-    engines: {node: '>=12.0.0'}
-    dependencies:
-      ansi-escapes: 4.3.2
-      chalk: 4.1.2
-      cli-cursor: 3.1.0
-      cli-width: 3.0.0
-      external-editor: 3.1.0
-      figures: 3.2.0
-      lodash: 4.17.21
-      mute-stream: 0.0.8
-      ora: 5.4.1
-      run-async: 2.4.1
-      rxjs: 7.8.1
-      string-width: 4.2.3
-      strip-ansi: 6.0.1
-      through: 2.3.8
-      wrap-ansi: 6.2.0
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /internal-slot@1.1.0:
@@ -5134,11 +4604,7 @@ packages:
     resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
     engines: {node: '>=8'}
     dependencies:
-<<<<<<< HEAD
-      binary-extensions: 2.2.0
-=======
       binary-extensions: 2.3.0
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /is-boolean-object@1.2.2:
@@ -5165,13 +4631,9 @@ packages:
     resolution: {integrity: sha512-RKtWF8pGmS87i2D6gqQu/l7EYRlVdfzemCJN/P3UOs//x1QE7mfhvzHIApBTRf7axvT6DMGwSwBXYCT0nfB9xw==}
     engines: {node: '>= 0.4'}
     dependencies:
-<<<<<<< HEAD
-      hasown: 2.0.0
-=======
       call-bound: 1.0.4
       get-intrinsic: 1.3.0
       is-typed-array: 1.1.15
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /is-date-object@1.1.0:
@@ -5237,14 +4699,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       is-extglob: 2.1.1
-<<<<<<< HEAD
-    dev: true
-
-  /is-interactive@1.0.0:
-    resolution: {integrity: sha512-2HvIEKRoqS62guEC+qBjpvRubdX910WCMuJTZ+I9yvqKU2/12eSL549HMwtabb4oupdj2sMP50k+XJfB/8JE6w==}
-    engines: {node: '>=8'}
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /is-map@2.0.3:
@@ -6045,13 +5499,8 @@ packages:
   /launch-editor@2.10.0:
     resolution: {integrity: sha512-D7dBRJo/qcGX9xlvt/6wUYzQxjh5G1RvZPgPv8vi4KRU99DVQL/oW7tnVOCCTm2HGeo3C5HvGE5Yrh6UBoZ0vA==}
     dependencies:
-<<<<<<< HEAD
-      picocolors: 1.0.0
-      shell-quote: 1.8.1
-=======
       picocolors: 1.1.1
       shell-quote: 1.8.2
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /leven@3.1.0:
@@ -6158,11 +5607,7 @@ packages:
   /lower-case@2.0.2:
     resolution: {integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==}
     dependencies:
-<<<<<<< HEAD
-      tslib: 2.6.2
-=======
       tslib: 2.8.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /lru-cache@5.1.1:
@@ -6197,19 +5642,11 @@ packages:
     resolution: {integrity: sha512-UERzLsxzllchadvbPs5aolHh65ISpKpM+ccLbOJ8/vvpBKmAWf+la7dXFy7Mr0ySHbdHrFv5kGFCUHHe6GFEmw==}
     engines: {node: '>= 4.0.0'}
     dependencies:
-<<<<<<< HEAD
-      fs-monkey: 1.0.5
-    dev: true
-
-  /merge-descriptors@1.0.1:
-    resolution: {integrity: sha512-cCi6g3/Zr1iqQi6ySbseM1Xvooa98N0w31jzUYrXPX2xqObmFGHJ0tQ5u74H3mVh7wLouTseZyYIq39g8cNp1w==}
-=======
       fs-monkey: 1.0.6
     dev: true
 
   /merge-descriptors@1.0.3:
     resolution: {integrity: sha512-gaNvAS7TZ897/rVaZ0nMtAyxNyi/pdbjbAwUpFQpN70GqnVfOiXpeUUMKRBmzXaSQ8DdTX4/0ms62r2K+hE6mQ==}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /merge-stream@2.0.0:
@@ -6233,14 +5670,11 @@ packages:
     resolution: {integrity: sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==}
     engines: {node: '>= 0.6'}
     dev: true
-<<<<<<< HEAD
-=======
 
   /mime-db@1.54.0:
     resolution: {integrity: sha512-aU5EJuIN2WDemCcAp2vFBfp/m4EAhWJnUNSSw0ixs7/kXbd6Pg64EmwJkNdFhB8aWt1sH2CTXrLxo/iAGV3oPQ==}
     engines: {node: '>= 0.6'}
     dev: true
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
 
   /mime-types@2.1.35:
     resolution: {integrity: sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==}
@@ -6287,17 +5721,9 @@ packages:
   /ms@2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
     dev: true
-<<<<<<< HEAD
-
-  /ms@2.1.2:
-    resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
-    dev: true
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
 
   /ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
-    dev: true
 
   /msw@2.7.4:
     resolution: {integrity: sha512-A2kuMopOjAjNEYkn0AnB1uj+x7oBjLIunFk7Ud4icEnVWFf6iBekn8oXW4zIwcpfEdWP9sLqyVaHVzneWoGEww==}
@@ -6359,14 +5785,11 @@ packages:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
     engines: {node: '>= 0.6'}
     dev: true
-<<<<<<< HEAD
-=======
 
   /negotiator@0.6.4:
     resolution: {integrity: sha512-myRT3DiWPHqho5PrJaIRyaMv2kgYf0mUVgBNOYMuCH5Ki1yEiQaf/ZJuQ62nvpc44wL5WDbTX7yGJi1Neevw8w==}
     engines: {node: '>= 0.6'}
     dev: true
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
 
   /neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
@@ -6376,11 +5799,7 @@ packages:
     resolution: {integrity: sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==}
     dependencies:
       lower-case: 2.0.2
-<<<<<<< HEAD
-      tslib: 2.6.2
-=======
       tslib: 2.8.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /node-forge@1.3.1:
@@ -6392,18 +5811,8 @@ packages:
     resolution: {integrity: sha512-O5lz91xSOeoXP6DulyHfllpq+Eg00MWitZIbtPfoSEvqIHdl5gfcY6hYzDWnj0qD5tz52PI08u9qUvSVeUBeHw==}
     dev: true
 
-<<<<<<< HEAD
-  /node-releases@2.0.13:
-    resolution: {integrity: sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ==}
-    dev: true
-
-  /node-releases@2.0.14:
-    resolution: {integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==}
-    dev: true
-=======
   /node-releases@2.0.19:
     resolution: {integrity: sha512-xxOWJsBKtzAq7DY0J+DTzuz58K8e7sJbdgwkbMWQe8UYB6ekmsQ45q0M/tJDsGaZmbC+l7n57UV8Hl5tHxO9uw==}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
 
   /normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
@@ -6439,14 +5848,9 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-<<<<<<< HEAD
-  /object-inspect@1.13.1:
-    resolution: {integrity: sha512-5qoj1RUiKOMsCCNLV1CBiPYE10sziTsnmNxkAI/rZhiD63CF7IqdFGC/XzjWjpSgLf0LxXX3bDFIh0E18f6UhQ==}
-=======
   /object-inspect@1.13.4:
     resolution: {integrity: sha512-W67iLl4J2EXEGTbfeHCffrjDfitvLANg0UlX3wFUUSTx92KXRFegMHUVgSqE+wvhAbi4WqjGg9czysTV2Epbew==}
     engines: {node: '>= 0.4'}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /object-keys@1.1.1:
@@ -6627,11 +6031,7 @@ packages:
     resolution: {integrity: sha512-RXlj7zCYokReqWpOPH9oYivUzLYZ5vAPIfEmCTNViosC78F8F0H9y7T7gG2M39ymgutxF5gcFEsyZQSph9Bp3A==}
     dependencies:
       dot-case: 3.0.4
-<<<<<<< HEAD
-      tslib: 2.6.2
-=======
       tslib: 2.8.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /parent-module@1.0.1:
@@ -6666,11 +6066,7 @@ packages:
     resolution: {integrity: sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g==}
     dependencies:
       no-case: 3.0.4
-<<<<<<< HEAD
-      tslib: 2.6.2
-=======
       tslib: 2.8.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /path-exists@4.0.0:
@@ -6697,25 +6093,12 @@ packages:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
     dev: true
 
-<<<<<<< HEAD
-  /path-to-regexp@0.1.7:
-    resolution: {integrity: sha512-5DFkuoqlv1uYQKxy8omFBeJPQcdoE07Kv2sferDCrAq1ohOU+MSDswDIbnx3YAM60qIOnYa53wBhXW0EbMonrQ==}
-    dev: true
-
-  /path-to-regexp@6.2.1:
-    resolution: {integrity: sha512-JLyh7xT1kizaEvcaXOQwOc2/Yhw6KZOvPf1S8401UyLk86CU79LN3vl7ztXGm/pZ+YjoyAJ4rxmHwbkBXJX+yw==}
-    dev: true
-
-  /picocolors@1.0.0:
-    resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
-=======
   /path-to-regexp@0.1.12:
     resolution: {integrity: sha512-RA1GjUVMnvYFxuqovrEqZoxxW5NUZqbwKtYz/Tt7nXerk0LbLblQmrsgdeOxV5SFHf0UDggjS/bSeOZwt1pmEQ==}
     dev: true
 
   /path-to-regexp@6.3.0:
     resolution: {integrity: sha512-Yhpw4T9C6hPpgPeA28us07OJeqZ5EzQTkbfwuhsUg0c237RomFoETJgmp2sa3F/41gfLE6G5cqcYwznmeEeOlQ==}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /picocolors@1.1.1:
@@ -6743,14 +6126,11 @@ packages:
     dependencies:
       find-up: 4.1.0
     dev: true
-<<<<<<< HEAD
-=======
 
   /possible-typed-array-names@1.1.0:
     resolution: {integrity: sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg==}
     engines: {node: '>= 0.4'}
     dev: true
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
 
   /postcss-modules-extract-imports@3.1.0(postcss@8.5.3):
     resolution: {integrity: sha512-k3kNe0aNFQDAZGbin48pL2VNidTF0w4/eASDsxlyspobzU3wZQLOGj7L9gfRe0Jo9/4uud09DsjFNH7winGv8Q==}
@@ -6867,13 +6247,6 @@ packages:
     dependencies:
       forwarded: 0.2.0
       ipaddr.js: 1.9.1
-<<<<<<< HEAD
-    dev: true
-
-  /psl@1.9.0:
-    resolution: {integrity: sha512-E/ZsdU4HLs/68gYzgGTkMicWTLPdAftJLfJFlLUAAKZGkStNU72sZjT66SnMDVOfOWY/YAoiD7Jxa9iHvngcag==}
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /psl@1.15.0:
@@ -6895,11 +6268,7 @@ packages:
     resolution: {integrity: sha512-+38qI9SOr8tfZ4QmJNplMUxqjbe7LKvvZgWdExBOmd+egZTtjLB67Gu0HRX3u/XOq7UU2Nx6nsjvS16Z9uwfpg==}
     engines: {node: '>=0.6'}
     dependencies:
-<<<<<<< HEAD
-      side-channel: 1.0.4
-=======
       side-channel: 1.1.0
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /querystringify@2.2.0:
@@ -6971,11 +6340,7 @@ packages:
     resolution: {integrity: sha512-/vxpCXddiX8NGfGO/mTafwjq4aFa/71pvamip0++IQk3zG8cbCj0fifNPrjjF1XMXUne91jL9OoxmdykoEtifQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-<<<<<<< HEAD
-      resolve: 1.22.8
-=======
       resolve: 1.22.10
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /reflect.getprototypeof@1.0.10:
@@ -7146,14 +6511,6 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.2.3
-<<<<<<< HEAD
-    dev: true
-
-  /run-async@2.4.1:
-    resolution: {integrity: sha512-tvVnVv01b8c1RrA6Ep7JkStj85Guv/YrMcwqYQnwjsAS2cTmmPGBBjAjpCW7RrSodNSoE2/qg9O4bceNvUuDgQ==}
-    engines: {node: '>=0.12.0'}
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /run-parallel@1.2.0:
@@ -7180,8 +6537,6 @@ packages:
   /safe-buffer@5.2.1:
     resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
     dev: true
-<<<<<<< HEAD
-=======
 
   /safe-push-apply@1.0.0:
     resolution: {integrity: sha512-iKE9w/Z7xCzUMIZqdBsp6pEQvwuEebH4vdpjcDWnyzaI6yl6O9FHvVpmGelvEHNsoY6wGblkxR6Zty/h00WiSA==}
@@ -7190,7 +6545,6 @@ packages:
       es-errors: 1.3.0
       isarray: 2.0.5
     dev: true
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
 
   /safe-regex-test@1.1.0:
     resolution: {integrity: sha512-x/+Cz4YrimQxQccJf5mKEbIa1NzeCRNI5Ecl/ekmlYaampdNLPalVyIcCZNNH3MvmqBugV5TMYZXv0ljslUlaw==}
@@ -7217,24 +6571,9 @@ packages:
     engines: {node: '>= 10.13.0'}
     dependencies:
       '@types/json-schema': 7.0.15
-<<<<<<< HEAD
-      ajv: 6.12.6
-      ajv-keywords: 3.5.2(ajv@6.12.6)
-    dev: true
-
-  /schema-utils@4.2.0:
-    resolution: {integrity: sha512-L0jRsrPpjdckP3oPug3/VxNKt2trR8TcabrM6FOAAlvC/9Phcmm+cuAgTlxBqdBR1WJx7Naj9WHw+aOmheSVbw==}
-    engines: {node: '>= 12.13.0'}
-    dependencies:
-      '@types/json-schema': 7.0.15
-      ajv: 8.12.0
-      ajv-formats: 2.1.1(ajv@8.12.0)
-      ajv-keywords: 5.1.0(ajv@8.12.0)
-=======
       ajv: 8.17.1
       ajv-formats: 2.1.1(ajv@8.17.1)
       ajv-keywords: 5.1.0(ajv@8.17.1)
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /select-hose@2.0.0:
@@ -7317,19 +6656,12 @@ packages:
     resolution: {integrity: sha512-pgRc4hJ4/sNjWCSS9AmnS40x3bNMDTknHgL5UaMBTMyJnU90EgWh1Rz+MC9eFu4BuN/UwZjKQuY/1v3rM7HMfg==}
     engines: {node: '>= 0.4'}
     dependencies:
-<<<<<<< HEAD
-      define-data-property: 1.1.1
-      get-intrinsic: 1.2.2
-      gopd: 1.0.1
-      has-property-descriptors: 1.0.1
-=======
       define-data-property: 1.1.4
       es-errors: 1.3.0
       function-bind: 1.1.2
       get-intrinsic: 1.3.0
       gopd: 1.2.0
       has-property-descriptors: 1.0.2
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /set-function-name@2.0.2:
@@ -7377,11 +6709,6 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
     dev: true
-<<<<<<< HEAD
-
-  /shell-quote@1.8.1:
-    resolution: {integrity: sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA==}
-=======
 
   /shell-quote@1.8.2:
     resolution: {integrity: sha512-AzqKpGKjrj7EM6rKVQEPpB288oCfnrEIuyoT9cyF4nmGa7V8Zk6f7RRqYisX8X9m+Q7bd632aZW4ky7EhbQztA==}
@@ -7415,24 +6742,17 @@ packages:
       get-intrinsic: 1.3.0
       object-inspect: 1.13.4
       side-channel-map: 1.0.1
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /side-channel@1.1.0:
     resolution: {integrity: sha512-ZX99e6tRweoUXqR+VBrslhda51Nh5MTQwou5tnUDgbtyM0dBgmhEDtWGP/xbKn6hqfPRHujUNwz5fy/wbbhnpw==}
     engines: {node: '>= 0.4'}
     dependencies:
-<<<<<<< HEAD
-      call-bind: 1.0.5
-      get-intrinsic: 1.2.2
-      object-inspect: 1.13.1
-=======
       es-errors: 1.3.0
       object-inspect: 1.13.4
       side-channel-list: 1.0.0
       side-channel-map: 1.0.1
       side-channel-weakmap: 1.0.2
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /signal-exit@3.0.7:
@@ -7707,18 +7027,7 @@ packages:
     peerDependencies:
       webpack: ^5.27.0
     dependencies:
-<<<<<<< HEAD
-      webpack: 5.89.0
-    dev: true
-
-  /supports-color@5.5.0:
-    resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}
-    engines: {node: '>=4'}
-    dependencies:
-      has-flag: 3.0.0
-=======
       webpack: 5.99.5(webpack-cli@5.1.4)
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /supports-color@7.2.0:
@@ -7767,17 +7076,10 @@ packages:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
-<<<<<<< HEAD
-      schema-utils: 3.3.0
-      serialize-javascript: 6.0.1
-      terser: 5.24.0
-      webpack: 5.89.0
-=======
       schema-utils: 4.3.0
       serialize-javascript: 6.0.2
       terser: 5.39.0
       webpack: 5.99.5(webpack-cli@5.1.4)
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /terser@5.39.0:
@@ -7806,16 +7108,6 @@ packages:
 
   /thunky@1.1.0:
     resolution: {integrity: sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA==}
-<<<<<<< HEAD
-    dev: true
-
-  /tmp@0.0.33:
-    resolution: {integrity: sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==}
-    engines: {node: '>=0.6.0'}
-    dependencies:
-      os-tmpdir: 1.0.2
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /tmpl@1.0.5:
@@ -7851,13 +7143,8 @@ packages:
       punycode: 2.3.1
     dev: true
 
-<<<<<<< HEAD
-  /tsconfig-paths@3.14.2:
-    resolution: {integrity: sha512-o/9iXgCYc5L/JxCHPe3Hvh8Q/2xm5Z+p18PESBU6Ff33695QnCHBEjcytY2q19ua7Mbl/DavtBOLq+oG0RCL+g==}
-=======
   /tsconfig-paths@3.15.0:
     resolution: {integrity: sha512-2Ac2RgzDe/cn48GvOe3M+o82pEFewD3UPbyoUHHdKasHwJKjds4fLXWf/Ux5kATBKN20oaFGu+jbElp1pos0mg==}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dependencies:
       '@types/json5': 0.0.29
       json5: 1.0.2
@@ -7865,13 +7152,8 @@ packages:
       strip-bom: 3.0.0
     dev: true
 
-<<<<<<< HEAD
-  /tslib@2.6.2:
-    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
-=======
   /tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /turbo-darwin-64@1.13.4:
@@ -8014,20 +7296,9 @@ packages:
       reflect.getprototypeof: 1.0.10
     dev: true
 
-<<<<<<< HEAD
-  /typescript@5.2.2:
-    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
-    engines: {node: '>=14.17'}
-    hasBin: true
-    dev: true
-
-  /unbox-primitive@1.0.2:
-    resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
-=======
   /unbox-primitive@1.1.0:
     resolution: {integrity: sha512-nWJ91DjeOkej/TA8pXQ3myruKpKEYgqvpw9lz4OPHj/NWFNluYrjbz9j01CJ8yKQd2g4jFoOkINCTW2I5LEEyw==}
     engines: {node: '>= 0.4'}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dependencies:
       call-bound: 1.0.4
       has-bigints: 1.1.0
@@ -8079,24 +7350,8 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-<<<<<<< HEAD
-  /update-browserslist-db@1.0.13(browserslist@4.22.1):
-    resolution: {integrity: sha512-xebP81SNcPuNpPP3uzeW1NYXxI3rxyJzF3pD6sH4jE7o/IX+WtSpwnVU+qIsDPyk0d3hmFQ7mjqc6AtV604hbg==}
-    hasBin: true
-    peerDependencies:
-      browserslist: '>= 4.21.0'
-    dependencies:
-      browserslist: 4.22.1
-      escalade: 3.1.1
-      picocolors: 1.0.0
-    dev: true
-
-  /update-browserslist-db@1.0.13(browserslist@4.22.2):
-    resolution: {integrity: sha512-xebP81SNcPuNpPP3uzeW1NYXxI3rxyJzF3pD6sH4jE7o/IX+WtSpwnVU+qIsDPyk0d3hmFQ7mjqc6AtV604hbg==}
-=======
   /update-browserslist-db@1.1.3(browserslist@4.24.4):
     resolution: {integrity: sha512-UxhIZQ+QInVdunkDAaiazvvT/+fXL5Osr0JZlJulepYu6Jd7qJtDZjlur0emRlT71EN3ScPoE7gvsuIKKNavKw==}
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
@@ -8175,15 +7430,6 @@ packages:
     resolution: {integrity: sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==}
     dependencies:
       minimalistic-assert: 1.0.1
-<<<<<<< HEAD
-    dev: true
-
-  /wcwidth@1.0.1:
-    resolution: {integrity: sha512-XHPEwS0q6TaxcvG85+8EYkbiCux2XtWG2mkc47Ng2A77BQu9+DqIOJldST4HgPkuea7dvKSj5VgX3P1d4rW8Tg==}
-    dependencies:
-      defaults: 1.0.4
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /webidl-conversions@7.0.0:
@@ -8235,13 +7481,8 @@ packages:
       memfs: 3.5.3
       mime-types: 2.1.35
       range-parser: 1.2.1
-<<<<<<< HEAD
-      schema-utils: 4.2.0
-      webpack: 5.89.0(webpack-cli@5.1.4)
-=======
       schema-utils: 4.3.0
       webpack: 5.99.5(webpack-cli@5.1.4)
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
     dev: true
 
   /webpack-dev-server@4.15.2(webpack-cli@5.1.4)(webpack@5.99.5):
@@ -8309,49 +7550,6 @@ packages:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
     dev: true
-<<<<<<< HEAD
-
-  /webpack@5.89.0:
-    resolution: {integrity: sha512-qyfIC10pOr70V+jkmud8tMfajraGCZMBWJtrmuBymQKCrLTRejBI8STDp1MCyZu/QTdZSeacCQYpYNQVOzX5kw==}
-    engines: {node: '>=10.13.0'}
-    hasBin: true
-    peerDependencies:
-      webpack-cli: '*'
-    peerDependenciesMeta:
-      webpack-cli:
-        optional: true
-    dependencies:
-      '@types/eslint-scope': 3.7.7
-      '@types/estree': 1.0.5
-      '@webassemblyjs/ast': 1.11.6
-      '@webassemblyjs/wasm-edit': 1.11.6
-      '@webassemblyjs/wasm-parser': 1.11.6
-      acorn: 8.10.0
-      acorn-import-assertions: 1.9.0(acorn@8.10.0)
-      browserslist: 4.22.1
-      chrome-trace-event: 1.0.3
-      enhanced-resolve: 5.15.0
-      es-module-lexer: 1.4.1
-      eslint-scope: 5.1.1
-      events: 3.3.0
-      glob-to-regexp: 0.4.1
-      graceful-fs: 4.2.11
-      json-parse-even-better-errors: 2.3.1
-      loader-runner: 4.3.0
-      mime-types: 2.1.35
-      neo-async: 2.6.2
-      schema-utils: 3.3.0
-      tapable: 2.2.1
-      terser-webpack-plugin: 5.3.9(webpack@5.89.0)
-      watchpack: 2.4.0
-      webpack-sources: 3.2.3
-    transitivePeerDependencies:
-      - '@swc/core'
-      - esbuild
-      - uglify-js
-    dev: true
-=======
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
 
   /webpack@5.99.5(webpack-cli@5.1.4):
     resolution: {integrity: sha512-q+vHBa6H9qwBLUlHL4Y7L0L1/LlyBKZtS9FHNCQmtayxjI5RKC9yD8gpvLeqGv5lCQp1Re04yi0MF40pf30Pvg==}
@@ -8491,14 +7689,11 @@ packages:
   /wildcard@2.0.1:
     resolution: {integrity: sha512-CC1bOL87PIWSBhDcTrdeLo6eGT7mCFtrg0uIJtqJUFyK+eJnzl8A1niH56uu7KMa5XFrtiV+AQuHO3n7DsHnLQ==}
     dev: true
-<<<<<<< HEAD
-=======
 
   /word-wrap@1.2.5:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
     dev: true
->>>>>>> 055cca6 (chore: packages 내부 공통 의존성 루트로 이동하여 참조)
 
   /wrap-ansi@6.2.0:
     resolution: {integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==}

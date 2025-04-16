@@ -19,16 +19,12 @@ jobs:
           node-version: 18
           cache: "pnpm"
 
-      - name: Install dependencies for all packages
+      - name: Build for ttoss-tech-blog
         env:
           NODE_OPTIONS: --max_old_space_size=4096
         run: |
-          pnpm install --verbose
-
-      - name: Build for ttoss-tech-blog
-        run: |
           cd packages/ttoss-tech-blog
-          pnpm build
+          pnpm run build
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
