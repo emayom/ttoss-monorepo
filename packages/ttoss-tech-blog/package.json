@@ -21,7 +21,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:debug": "jest --debug",
-    "dev": "webpack server --config ./webpack.config.cjs"
+    "dev": "webpack server --config ./webpack.config.cjs",
+    "build": "webpack --config ./webpack.config.cjs --mode production"
   },
   "keywords": [],
   "license": "ISC",
