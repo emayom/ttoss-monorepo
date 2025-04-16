@@ -19,10 +19,9 @@ jobs:
           node-version: 18
           cache: "pnpm"
 
-      - name: Set Node.js memory limit
-        run: echo "NODE_OPTIONS=--max-old-space-size=4096" >> $GITHUB_ENV
-
       - name: Install dependencies for all packages
+        env:
+          NODE_OPTIONS: --max_old_space_size=4096
         run: |
           rm -rf node_modules
           pnpm install --verbose
