@@ -1,5 +1,6 @@
 {
   "name": "ttoss-tech-blog",
+  "homepage": "https://emayom.github.io/ttoss-monorepo",
   "version": "1.0.0",
   "description": "",
   "main": "src/app.js",
@@ -12,7 +13,6 @@
     "url": "https://github.com/f-lab-edu/ttoss-monorepo/issues"
   },
   "author": "emayom <emayom7@gmail.com>",
-  "homepage": "https://emayom.github.io/ttoss-monorepo",
   "type": "module",
   "engines": {
     "node": ">=16"
@@ -27,22 +27,24 @@
   "keywords": [],
   "license": "ISC",
   "dependencies": {
+    "@babel/preset-typescript": "^7.27.0",
     "vanilla-router": "workspace:*",
     "vanilla-v-dom": "workspace:*"
   },
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.23.4",
     "@babel/preset-env": "link:./node_modules",
-    "babel-jest": "link:./node_modules",
-    "style-loader": "link:./node_modules",
     "@faker-js/faker": "^8.3.1",
+    "babel-jest": "link:./node_modules",
     "babel-loder": "link:./node_modules",
     "classnames": "^2.3.2",
-    "html-webpack-plugin": "^5.5.3",
+    "html-webpack-plugin": "link:./node_modules",
     "msw": "^2.0.9",
+    "style-loader": "link:./node_modules",
     "undici": "^5.28.1",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "webpack": "link:./node_modules",
+    "webpack-cli": "link:./node_modules",
+    "webpack-dev-server": "link:./node_modules"
   },
   "msw": {
     "workerDirectory": "./public"

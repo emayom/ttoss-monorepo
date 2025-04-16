@@ -23,7 +23,6 @@ jobs:
         env:
           NODE_OPTIONS: --max_old_space_size=4096
         run: |
-          rm -rf node_modules
           pnpm install --verbose
 
       - name: Build for ttoss-tech-blog

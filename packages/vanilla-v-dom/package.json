@@ -25,9 +25,9 @@
   "devDependencies": {
     "@babel/preset-env": "link:./node_modules",
     "babel-loder": "link:./node_modules",
-    "html-webpack-plugin": "^5.5.3",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "html-webpack-plugin": "link:./node_modules",
+    "webpack-cli": "link:./node_modules",
+    "webpack-dev-server": "link:./node_modules"
   },
   "dependencies": {
     "@arrows/multimethod": "^2.1.0",

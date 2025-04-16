@@ -8,7 +8,7 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "./", // <- 이게 중요!
+    // publicPath: "./", // <- 이게 중요!
   },
   plugins: [
     new HtmlWebpackPlugin({
