@@ -8,24 +8,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # 'actions/checkout' 액션을 사용하여 리포지토리의 코드를 체크아웃
       - uses: actions/checkout@v4
-
-      - uses: pnpm/action-setup@v2
+      # 'pnpm/action-setup' 액션을 사용하여 지정된 버전의 PNPM을 설치하고 설정
+      - uses: pnpm/action-setup@v4
         with:
-          version: 8
-
+          version: 8.9.0
+      # 'actions/setup-node' 액션을 사용하여 Node.js 버전 설정
       - uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: "pnpm"
 
-      - name: Install dependencies for all packages
+      - name: Install dependencies 
         env:
-          NODE_OPTIONS: --max_old_space_size=4096
+          NODE_OPTIONS: --max_old_space_size=8192
         run: |
-          pnpm install
+          pnpm install --ignore-scripts
 
-      - name: Build for ttoss-tech-blog
+      - name: Run build 
         run: |
           cd packages/ttoss-tech-blog
           pnpm run build
